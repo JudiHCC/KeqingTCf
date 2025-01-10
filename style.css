@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#3D1657;
+    color: #D6C5D9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+}
+footer{
+    padding: 10px 30px;
+    background-color: #34124a;
+    font-size: 0.75em;
+    text-align: end;
+}
+a{
+    text-decoration: none;
+    color: #D6C5D9;
+}
+footer li{
+    text-align: left;
+}
+a:hover{
+    color: aliceblue;
+}
+header{
+    background-color:#34124a;
+    background-image: url(img/banner.webp);
+    background-repeat: no-repeat;
+    background-position: 75%;
+    background-size: 850px;
+    padding: 20px 0;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+}
+header li{
+    text-align: center;
+    display: block;
+    margin: 5px;
+    padding: 15px;
+    background-color: #3D1657;
+    border-radius: 15px;
+}
+header li:hover{
+    background-color: #DCB3E6;
+    color: #691b9a;
+}
+.general{
+    margin: 2% 7%;
+    padding: 40px;
+    background-color: #513E75;
+    border-radius: 30px;
+}
+h1{
+    font-size: 3em;
+    margin: 20px;
+}
+#intro{
+    display: flex;
+}
+#intro section{
+    width: 65%;
+}
+aside{
+    width: 15%;
+    background-color: #e4d6e61f;
+    border-radius: 100px;
+    margin: 1%;
+    transition: all 1s;
+}
+aside:first-of-type{
+    background-image: url(img/keqing_splash_art.webp);
+    background-size: 600px;
+    background-position: 60%;
+    background-repeat: no-repeat;
+}
+aside:last-of-type{
+    background-image: url(img/keqing_skin.webp);
+    background-size: 400px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+aside:hover{
+    background-color: #e4d6e65e;
+    background-position: 55%;
+}
+#estrelles{
+    height: 70px;
+}
+#espasa, #electro{
+    height: 1em;
+}
+#intro h3{
+    background-color: #67548A;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 30px;
+    max-width: 300px;
+}
+#intro p{
+    margin: 10px;
+}
+#build{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box{
+    display: block;
+    background-color: #67548A;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.icon{
+    height: 70px;
+    margin: 5px;
+}
+.box p:not(.normal, .casella p){
+    font-size: 3em;
+}
+.rank{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.casella{
+    margin: 10px;
+    display: block;
+    width: 80px;
+    background-color: #D6C5D9;
+    border-radius: 10px;
+}
+.img{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 20px;
+}
+.cinc{
+    background-color: #d4af37;
+}
+.quatre{
+    background-color: #513E75;
+}
+.equip{
+    height: 80px;
+    width: 80px;
+}
+.casella p{
+    font-size: 15px;
+    color: #34124a;
+}
+.team{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.team .card{
+    width: 25%;
+}
+#ralla{
+    background-color: #D6C5D9;
+    width: 3px;
+    height: 200px;
+    border-radius: 5px;
+}#ralla2{
+    background-color: #D6C5D9;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+}
+.rep{
+    transition: all 1s;
+}
+.rep:hover{
+    width: 22%;
+}
+.container{
+    background-color: #67548A;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container h2{
+    width: 100%;
+    margin: 10px 50px;
+}
+.card{
+    width: 200px;
+}
+.defs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+.defs h3{
+    width: 100%;
+}
+.display{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 30px;
+    background-color: #3D1657;
+    border-radius: 30px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+th img{
+    height: 200px;
+}
+th{
+    font-size: 2em;
+    text-align: left;
+}
+td{
+    vertical-align: top;
+    padding: 10px;
+}
+.bonus{
+    text-align: right;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4d6e61f;
+    transform: rotate(45deg);
+    transition: all 1s;
+}
+.close:hover{
+    background-color: #e4d6e65e;
+    transform: rotate(225deg);
+}
+.line {
+    position: absolute;
+    background-color: #D6C5D9;
+    border-radius: 50%;
+}
+.hor {
+    width: 30px;
+    height: 4px;
+}
+.ver {
+    width: 4px;
+    height: 30px;
+}
+.video{
+    min-width: 100px;
+    max-width: 500px;
+}
+.amagat{
+    display: none;
+}
